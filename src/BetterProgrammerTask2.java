@@ -7,7 +7,7 @@ import java.util.List;
 public class BetterProgrammerTask2 {
 
     public static void main(String[] args) {
-        System.out.println(countPowerfulNumbers(1,16));
+        System.out.println(countPowerfulNumbers(4,16));
     }
 
     public static int countPowerfulNumbers(int from, int to)
@@ -65,7 +65,7 @@ public class BetterProgrammerTask2 {
 
             for (int i = 2; i <= tempN / 2; i++)
             {
-                if (tempN % (i+1) == 0)
+                if (tempN % i == 0)
                 {
                     isPrime = false;
                     break;
